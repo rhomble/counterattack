@@ -1,8 +1,8 @@
 # counterattack
 **Now you can generate your own Counter Attack player cards for real-life players!**
 
-<img src="https://github.com/cbrown4858/counterattack/blob/main/images/counterattack_logo.png" width=100% height=100%>
-<img src="https://github.com/cbrown4858/counterattack/blob/main/images/fminside_logo.png" width=25% height=25% align=right>
+<img src="https://github.com/cbrown4858/counterattack/blob/main/images/counterattack_logo.png" width=100% height=100% align=center>
+<img src="https://github.com/cbrown4858/counterattack/blob/main/images/fminside_logo.png" width=30% height=30% align=right>
 
 This python package creates a 'Counter Attack: The Football Strategy Game' player card data file for any real-life player(s) with 'Football Manager' data from [FMInside](https://fminside.net/). The player card data file that is created is intended to be used with the Counter Attack Custom Card Generator created by [Konrad Frac](https://github.com/kkoripl).  
   
