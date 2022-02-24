@@ -60,7 +60,7 @@ class Club:
         counts = {surname:surname.count(surname) for surname in squad_surnames}
         for player in self.players:
             if counts[player.surname]>1 and surname_only==True:
-                player.set_display_name(f'{player.first_name[:1]}. {player.surname}')
+                player.update_display_name(f'{player.first_name[:1]}. {player.surname}')
             elif counts[player.surname]>1 and surname_only==False:
                 if len(player.name) > cutoff:
                     if len(player.first_name) == '':
@@ -70,7 +70,7 @@ class Club:
                 else:
                     player.set_display_name(player.name)
             elif counts[player.surname]==1 and surname_only==True:
-                player.set_display_name(f'{player.surname}')
+                player.update_display_name(f'{player.surname}')
             elif counts[player.surname]==1 and surname_only==False:
                 if len(player.name) > cutoff:
                     player.set_display_name(player.surname)
@@ -92,11 +92,11 @@ class Club:
             print(f'Entered squad_size ({squad_size}) is greater than the full squad size ({len(self.players)}). Proceeding with the full squad size.')
             return pd.DataFrame([player.get_data_for_ca_card() for player in self.players])
         elif squad_size < len(self.players):
-            return pd.DataFrame([player.get_data_for_ca_card() for player in self._get_top_players(squad_size)])
+            return pd.DataFrame([player.fetch_data_for_ca_card() for player in self._extract_top_players(squad_size)])
 
     def save_to_xlsx(self, save_dir=os.getcwd(), squad_size=25):
         save_path = os.path.join(save_dir, f'{self.name.replace(" ", "")}_{self.fm_version}.xlsx')
-        df = self.send_ca_to_df(squad_size)
+        df = self.send_to_df(squad_size)
         column_list = df.columns
         writer = pd.ExcelWriter(save_path, engine='xlsxwriter')
         df.to_excel(writer, sheet_name='Sheet1', startrow=1, header=False, index=False)

@@ -76,6 +76,8 @@ class Player:
                 value = round(average * CONV_RATE)
                 # print(self.name)
                 # print(f'{skill}: {value} ({average * CONV_RATE})')
+            if value == 0:
+                value += 1
             skills[skill] = value
         if self.position == 'Goalkeeper':
             skills['Heading'] = None
