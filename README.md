@@ -36,14 +36,17 @@ _This package wouldn't be possible without the data from FMInside and the custom
 - Step 3: upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
 - Step 4: click 'Generate PDF' in the card generator's UI. Download the PDF.
 
-### Points for Consideration
-- **NATIONALITY ERROR:** If you get the error `Error during player file uploading. Player has wrong country in row: __` when loading a .xlsx file to the Custom Card Generator, the issue is the country name on FMInside does not match any of the countries recognized by the Custom Card Generator. Both FMInside's version and the generator's version of the country name need to be added to the NATION_CONV dictionary in the fminside.py module. **If you come across this error, let me know and I'll update the code.**
-  
-- **ZEROS FOR SKILLS:** If a player's Counter Attack skill ends up being 0, that skill is given a value of 1 instead. This is due to Counter Attack not using 0s for skill values.
+## Potential Errors
+### _Specific country names_  
+If you get the error `Error during player file uploading. Player has wrong country in row: __` when loading a .xlsx file to the Custom Card Generator, the issue is the country name on FMInside does not match any of the countries recognized by the Custom Card Generator. Both FMInside's version and the generator's version of the country name need to be added to the NATION_CONV dictionary in the fminside.py module.  
+**If you come across this error, let me know and I'll update the code.**
 
+## Quirks
+### _Neymar can't tackle_  
+If a player's Football Manager skills translate to a Counter Attack skill score of 0, that skill is given a value of 1 instead. This is due to Counter Attack not using 0s for skill values. According to the current translation (and _not_ adjusting the result to 1), Neymar's tackling rounds down to a Counter Attack tackling score of 0.
 
 ## Documentation
-Find any documentation on usage of the different sections in the DOCSTRING of their corresponding files.
+Find any documentation on usage of the different modules in the docstrings of their corresponding files.
 
 ## Want to contribute?
-Fork this repository to make any changes you see fit! In particular, the FM_TO_CA_DICT in the player.py module. This is what translates Football Manager stats to Counter Attack stats (and is currently just my opinion on which should be considered for which). Fun fact: Neymar's FM stats translate to a 0 for his CA tackling skill. 
+Fork this repository to make any changes you see fit! In particular, the FM_TO_CA_DICT in the player.py module. This is what translates Football Manager stats to Counter Attack stats (and is currently just my opinion on which should be considered for which). Fun fact: skill. 
