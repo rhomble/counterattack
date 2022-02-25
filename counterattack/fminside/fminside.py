@@ -61,8 +61,10 @@ def fetch_player_fm_data(url):
     name = str(dom.xpath('//*[@id="player"]/div[2]/ul/li[1]/span[2]/text()')[0])
     fm_version = str(dom.xpath('//*[@id="main_body"]/ul/li[1]/a/text()')[0]).replace(" ", "")
     NATION_CONV = {
+        # Football Mananger: Counter Attack
         'Republic of Ireland': 'Ireland',
-        'United States': 'Usa'
+        'United States': 'Usa',
+        'Czech Republic': 'Czechia'
     }
     nation_result = dom.xpath('//*[@id="player"]/div[1]/div/ul/li[2]/span/a/text()')
     nation = nation_result[0]
