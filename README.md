@@ -5,7 +5,7 @@
   
 This python package creates a .xlsx file with Counter Attack player card stats for any real-life footballers from their Football Manager attributes. This .xlsx file is intended to be used with the **Counter Attack Custom Card Generator** created by [Konrad Frac](https://github.com/kkoripl). The Football Manager data is scraped from [FMInside](https://fminside.net/).
   
-<img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_3.png" width=100% height=100%>  
+<img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_4.png" width=100% height=100%>  
   
 ## Installation
 - Step 1: clone this repository, and cd into it.
