@@ -8,7 +8,7 @@ This python package creates a 'Counter Attack: The Football Strategy Game' playe
   
 _This package wouldn't be possible without the data from FMInside and the custom card generator from Konrad Franc. Thank you._  
 
-<img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_1.png" width=100% height=100%>  
+<img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_3.png" width=100% height=100%>  
 
 ## Installation
 - Step 1: clone this repository, and cd into it.
