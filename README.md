@@ -8,9 +8,9 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 <img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_4.png" width=100% height=100%>  
   
 ## Installation
-- Step 1: clone this repository, and cd into it.
-- Step 2: create a virtual environment in whatever your favorite way to do that is (e.g. `conda create -n my_env` -> `conda activate my_env`).
-- Step 3: `pip install .` will install this repo such that you can use `from counterattack.xxx.yyy import zzz`.
+1. clone this repository, and cd into it.
+2. create a virtual environment in whatever your favorite way to do that is (e.g. `conda create -n my_env` -> `conda activate my_env`).
+3. `pip install .` will install this repo such that you can use `from counterattack.xxx.yyy import zzz`.
     - NOTE: You may have to install "pip" itself first in the new environement (e.g. `conda install pip`).
 
 ## User Guide
