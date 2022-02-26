@@ -36,13 +36,14 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 - Step 4: click 'Generate PDF' in the card generator's UI. Download the PDF.
 
 ## Quirks
-### _Neymar can't tackle_  
+### Neymar can't tackle
 If a player's Football Manager skills translate to a Counter Attack skill score of 0, that skill is given a value of 1 instead. This is due to Counter Attack not using 0s for skill values. According to the current translation (and _not_ adjusting the result to 1), Neymar's tackling rounds down to a Counter Attack tackling score of 0.
 
 ## Potential Issues
-### _Specific country names_  
-If you get the error `Error during player file uploading. Player has wrong country in row: __` when loading a .xlsx file to the Custom Card Generator, the issue is the country name on FMInside does not match any of the countries recognized by the Custom Card Generator. Both FMInside's version and the generator's version of the country name need to be added to the NATION_CONV dictionary in the fminside.py module.  
-**If you come across this error, let me know and I'll update the code.**
+### Specific country names
+  
+If you get the error below when loading a .xlsx file to the Custom Card Generator, the issue is the country name on FMInside does not match any of the countries recognized by the Custom Card Generator. Both FMInside's version and the generator's version of the country name need to be added to the NATION_CONV dictionary in the fminside.py module. If you come across this error, let me know and I'll update the code. 
+> _Error during player file uploading. Player has wrong country in row: xx_  
 
 ## Documentation
 Find any documentation on usage of the different modules in the docstrings of their corresponding files.
