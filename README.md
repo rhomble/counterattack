@@ -26,7 +26,7 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 ### For a club
 1. find a club profile on [FMInside](https://fminside.net/)
 2. run the following code in the terminal: `python buildclub.py --url X --export_dir Y --export_squad_size Z`
-    - _X: URL to player_
+    - _X: URL to club_
     - _Y: full path to directory to save the resulting .xlsx file_
     - _Z: '_full_' for the full squad, or a number for the top number of players from the squad (this is optional, the default is 25)_
     - _NOTE: this assumes you're in the "counterattack/scripts/" directory_
