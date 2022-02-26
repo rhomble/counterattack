@@ -15,25 +15,25 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 
 ## User Guide
 ### For a player
-- Step 1: find a player profile on [FMInside](https://fminside.net/)
-- Step 2: run the following code in the terminal (without the brackets)
+1. find a player profile on [FMInside](https://fminside.net/)
+2. run the following code in the terminal (without the brackets)
     - `python buildplayer.py --url X --export_dir Y`
     - X = URL to player
     - Y = full path to directory to save the resulting .xlsx file
     - _NOTE: this assumes you're in the counterattacl/scripts/ directory_
-- Step 3: upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
-- Step 4: click 'Generate PDF' in the card generator's UI. Download the PDF.
+3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
+4. click 'Generate PDF' in the card generator's UI. Download the PDF.
 
 ### For a club
-- Step 1: find a player profile on [FMInside](https://fminside.net/)
-- Step 2: run the following code in the terminal (without the brackets)
+1. find a club profile on [FMInside](https://fminside.net/)
+2. run the following code in the terminal (without the brackets)
     - `python buildclub.py --url X --export_dir Y --export_squad_size Z`
     - X = URL to player
     - Y = full path to directory to save the resulting .xlsx file
     - Z = '_full_' for the full squad, or a number for the top number of players from the squad (this is optional, the default is 25)
     - _NOTE: this assumes you're in the directory /counterattacl/scripts/_
-- Step 3: upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
-- Step 4: click 'Generate PDF' in the card generator's UI. Download the PDF.
+3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
+4. click 'Generate PDF' in the card generator's UI. Download the PDF.
 
 ## Quirks
 ### Neymar can't tackle
