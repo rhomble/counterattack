@@ -16,22 +16,20 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 ## User Guide
 ### For a player
 1. find a player profile on [FMInside](https://fminside.net/)
-2. run the following code in the terminal (without the brackets)
-    - `python buildplayer.py --url X --export_dir Y`
-    - X = URL to player
-    - Y = full path to directory to save the resulting .xlsx file
-    - _NOTE: this assumes you're in the counterattacl/scripts/ directory_
+2. run the following code in the terminal: `python buildplayer.py --url X --export_dir Y`
+    - _X: URL to player_
+    - _Y: full path to directory to save the resulting .xlsx file_
+    - _NOTE: this assumes you're in the "counterattack/scripts/" directory_
 3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
 4. click 'Generate PDF' in the card generator's UI. Download the PDF.
 
 ### For a club
 1. find a club profile on [FMInside](https://fminside.net/)
-2. run the following code in the terminal (without the brackets)
-    - `python buildclub.py --url X --export_dir Y --export_squad_size Z`
-    - X = URL to player
-    - Y = full path to directory to save the resulting .xlsx file
-    - Z = '_full_' for the full squad, or a number for the top number of players from the squad (this is optional, the default is 25)
-    - _NOTE: this assumes you're in the directory /counterattacl/scripts/_
+2. run the following code in the terminal: `python buildclub.py --url X --export_dir Y --export_squad_size Z`
+    - _X: URL to player_
+    - _Y: full path to directory to save the resulting .xlsx file_
+    - _Z: '_full_' for the full squad, or a number for the top number of players from the squad (this is optional, the default is 25)_
+    - _NOTE: this assumes you're in the "counterattack/scripts/" directory_
 3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
 4. click 'Generate PDF' in the card generator's UI. Download the PDF.
 
