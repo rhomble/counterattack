@@ -64,7 +64,8 @@ def fetch_player_fm_data(url):
         # Football Mananger: Counter Attack
         'Republic of Ireland': 'Ireland',
         'United States': 'Usa',
-        'Czech Republic': 'Czechia'
+        'Czech Republic': 'Czechia',
+        'Bosnia and Herzegovina': 'Bosnia'
     }
     nation_result = dom.xpath('//*[@id="player"]/div[1]/div/ul/li[2]/span/a/text()')
     nation = nation_result[0]
