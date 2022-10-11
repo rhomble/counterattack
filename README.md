@@ -6,32 +6,13 @@
 This python package creates a .xlsx file with Counter Attack player card stats for any real-life footballers from their Football Manager attributes. This .xlsx file is intended to be used with the **Counter Attack Custom Card Generator** created by [Konrad Frac](https://github.com/kkoripl). The Football Manager data is scraped from [FMInside](https://fminside.net/).
   
 <img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_5.png" width=100% height=100%>  
-  
-## Installation
-1. clone this repository, and cd into it.
-2. create a virtual environment in whatever your favorite way to do that is (e.g. `conda create -n my_env` -> `conda activate my_env`).
-3. `pip install .` will install this repo such that you can use `from counterattack.xxx.yyy import zzz`.
-    - NOTE: You may have to install "pip" itself first in the new environement (e.g. `conda install pip`).
 
 ## User Guide
-### For a player
-1. find a player profile on [FMInside](https://fminside.net/)
-2. run the following code in the terminal: `python buildplayer.py --url X --export_dir Y`
-    - _X: URL to player_
-    - _Y: full path to directory to save the resulting .xlsx file_
-    - _NOTE: this assumes you're in the "counterattack/scripts/" directory_
-3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
-4. click 'Generate PDF' in the card generator's UI. Download the PDF.
+### Windows
+Download the Windows User Guide [here](https://github.com/cbrown4858/counterattack/guides/CAIRLPlayerCards_UserGuide_PC.pdf)
 
-### For a club
-1. find a club profile on [FMInside](https://fminside.net/)
-2. run the following code in the terminal: `python buildclub.py --url X --export_dir Y --export_squad_size Z`
-    - _X: URL to club_
-    - _Y: full path to directory to save the resulting .xlsx file_
-    - _Z: '_full_' for the full squad, or a number for the top number of players from the squad (this is optional, the default is 25)_
-    - _NOTE: this assumes you're in the "counterattack/scripts/" directory_
-3. upload .xlsx file to the [Counter Attack Custom Card Generator](https://kkoripl.github.io/CACCGeneratorWeb/custom-cards)
-4. click 'Generate PDF' in the card generator's UI. Download the PDF.
+### Mac
+Download the Mac User Guide [here](https://github.com/cbrown4858/counterattack/guides/CAIRLPlayerCards_UserGuide_Mac.pdf)
 
 ## Quirks
 ### Neymar can't tackle
