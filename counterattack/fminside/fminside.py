@@ -66,7 +66,9 @@ def fetch_player_fm_data(url):
         'United States': 'Usa',
         'Czech Republic': 'Czechia',
         'Bosnia and Herzegovina': 'Bosnia',
-        'Dominican Republic': 'Dominicana'
+        'Dominican Republic': 'Dominicana',
+        'Central African Republic': 'Central Africa',
+        'Democratic Republic of Congo': 'DR Congo'
     }
     nation_result = dom.xpath('//*[@id="player"]/div[1]/div/ul/li[2]/span/a/text()')
     nation = nation_result[0]
