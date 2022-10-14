@@ -8,11 +8,7 @@ This python package creates a .xlsx file with Counter Attack player card stats f
 <img src="https://github.com/cbrown4858/counterattack/blob/main/images/bumper_5.png" width=100% height=100%>  
 
 ## User Guide
-### Windows
-Download the Windows User Guide [here](https://github.com/cbrown4858/counterattack/guides/CAIRLPlayerCards_UserGuide_PC.pdf)
-
-### Mac
-Download the Mac User Guide [here](https://github.com/cbrown4858/counterattack/guides/CAIRLPlayerCards_UserGuide_Mac.pdf)
+Download the Windows or Mac User Guide [here](https://github.com/cbrown4858/counterattack/guides/)
 
 ## Quirks
 ### Neymar can't tackle
